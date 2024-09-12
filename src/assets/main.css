@@ -1,35 +1,19 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+:root{
+  --dark: #262526;
+  --light:#F1F1F1;
+  --green: #00882D;
+  --montserrat: 'Montserrat', sans-serif;
+  --archivoblack: 'Archivo Black', sans-serif;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+html,body{
+  margin: 0;
+  background-color: var(--dark);
+  font-family: var(--montserrat);
+  color: var(--light);
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.light{
+  background-color: var(--light);
+  color: var(--dark);
 }
