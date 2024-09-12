@@ -12,10 +12,13 @@ import ButtonSwitchDarkLightMode from '../buttons/ButtonSwitchDarkLightMode.vue'
 header{
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding:1rem 1rem;
-      background-color: var(--color-primary);
-      color: var(--color-white);
+      padding: 1rem;
+      background-color: var(--dark);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 95%;
+      z-index: 1000;
 }
 </style>

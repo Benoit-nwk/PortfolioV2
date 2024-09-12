@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
 :root{
   --dark: #262526;
   --light:#F1F1F1;
@@ -15,6 +17,17 @@ html,body{
 }
 
 .light{
-  background-color: var(--light);
-  color: var(--dark);
+  --dark: #F1F1F1;
+  --light:#262526;
+}
+
+button.button_main{
+  width: 35%;
+  height: 4rem;
+  color: var(--light);
+  font-size: 1rem;
+  background: transparent;
+  border: 0.2rem solid var(--green);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
 }

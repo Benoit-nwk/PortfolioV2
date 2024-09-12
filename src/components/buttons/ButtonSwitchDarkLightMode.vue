@@ -12,8 +12,10 @@ const toggleTheme = () => {
   isDarkMode.value = !isDarkMode.value;
   if(isDarkMode.value===false){
     document.body.classList.add('light');
+    document.documentElement.classList.add('light');
   } else {
     document.body.classList.remove('light');
+    document.documentElement.classList.remove('light');
   }
 };
 
