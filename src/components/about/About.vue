@@ -21,7 +21,7 @@
 
 
 #section-about{
-      margin: 2rem 0;
+      margin: 8rem 0;
       text-align: center;
       animation: in-from-left 1s;
       animation-timeline: view();

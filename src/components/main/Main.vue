@@ -4,7 +4,8 @@ import OpenToWork from '../open_to_work/OpenToWork.vue';
 import ButtonDownloadCV from '../buttons/ButtonDownloadCV.vue';
 import ButtonContact from '../buttons/ButtonContact.vue';
 import About from '../about/About.vue';
-
+import Projects from '../projects/Projects.vue';
+import Contact from '../contact/Contact.vue';
 const skillsTab = ["VsCode", "PhpStorm", "HTML", "CSS", "JavaScript", "PHP", "Vue.Js", "Laravel", "MySql", "Laragon", "Git", "Figma"]
 
 </script>
@@ -36,7 +37,8 @@ const skillsTab = ["VsCode", "PhpStorm", "HTML", "CSS", "JavaScript", "PHP", "Vu
             </div>
 </section>
       <About/>
-
+      <Projects/>
+      <Contact/>
       </main>
 </template>
 

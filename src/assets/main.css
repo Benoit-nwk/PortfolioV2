@@ -2,7 +2,7 @@
 
 @keyframes fade-in{
   0%{ scale: 0; opacity:0; }
-  45%{ scale: 1; opacity: 1; }
+  50%{ scale: 1; opacity: 1; }
 }
 
 @keyframes in-from-left{
@@ -12,7 +12,7 @@
 
 @keyframes in-from-right{
   0%{transform: translateX(100%);}
-  50%{transform: translateX(0);}
+  30%{transform: translateX(0);}
 }
 
 :root{
@@ -51,4 +51,16 @@ button.button_main{
 p{
   font-family: var(--montserrat);
   line-height: 1.5rem;
+  font-size: 1.5rem;
+}
+
+h1{
+  font-family: var(--archivoblack);
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+h2{
+  font-family: var(--montserrat);
+  font-size: 1.5rem;
 }
