@@ -3,24 +3,60 @@ import Profile from '../images/Profile.vue';
 import OpenToWork from '../open_to_work/OpenToWork.vue';
 import ButtonDownloadCV from '../buttons/ButtonDownloadCV.vue';
 import ButtonContact from '../buttons/ButtonContact.vue';
-import Skills from '../skills/Skills.vue';
+import About from '../about/About.vue';
+
+const skillsTab = ["VsCode", "PhpStorm", "HTML", "CSS", "JavaScript", "PHP", "Vue.Js", "Laravel", "MySql", "Laragon", "Git", "Figma"]
+
 </script>
 
 <template>
       <main>
-            <p>Bonjour, je suis</p><span class="name">Benoît Nowak</span><p>Développeur web junior</p>
-            <Profile/>
-            <OpenToWork/>
-            <div class="sectionButton">
-                  <ButtonDownloadCV/>
-                  <ButtonContact/>
+
+<!--Section de bienvenue-->
+            <section id="section-hello">
+                  <p>Bonjour, je suis</p>
+                  <span class="name">Benoît Nowak</span>
+                  <p>Développeur web junior</p>
+                  <Profile/>
+                  <OpenToWork/>
+
+<!--Alignement des boutons-->
+                  <div class="align-button">
+                        <ButtonDownloadCV/>
+                        <ButtonContact/>
+                  </div>
+            </section>
+
+<section id="section-skills">
+      <h2>Mes compétences</h2>
+            <div class="tab-of-skills">
+                  <div class="skills" v-for="skills in skillsTab">
+                        <span>{{ skills }}</span>
+                  </div>
             </div>
-            <Skills/>
+</section>
+      <About/>
+
       </main>
 </template>
 
 <style scoped>
-.sectionButton{
+
+
+
+#section-hello{
+      text-align: center;
+
+}
+
+#section-skills{
+      margin: 5rem 2rem;
+      text-align: center;
+      animation: fade-in linear;
+      animation-timeline: view();
+}
+
+.align-button{
       margin: 2rem 0;
       display: flex;
       justify-content: space-around;
@@ -28,16 +64,28 @@ import Skills from '../skills/Skills.vue';
 }
 
 main{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       margin: 8rem 0;
 }
 
 .name{
-  font-family: var(--archivoblack);
+      font-family: var(--archivoblack);
       font-size: 2rem;
 }
 
+
+
+.tab-of-skills{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+}
+
+.skills{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0.3rem solid var(--grey);
+      padding: 1rem;
+      border-radius: 0.5rem;
+}
 </style>

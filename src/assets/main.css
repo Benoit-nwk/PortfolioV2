@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
+@keyframes fade-in{
+  0%{ scale: 0; opacity:0; }
+  45%{ scale: 1; opacity: 1; }
+}
+
+@keyframes in-from-left{
+  0%{transform: translateX(-100%);}
+  50%{transform: translateX(0);}
+}
+
+@keyframes in-from-right{
+  0%{transform: translateX(100%);}
+  50%{transform: translateX(0);}
+}
+
 :root{
   --dark: #262526;
   --light:#F1F1F1;
   --green: #00882D;
+  --grey: #636263;
   --montserrat: 'Montserrat', sans-serif;
   --archivoblack: 'Archivo Black', sans-serif;
 }
@@ -30,4 +46,9 @@ button.button_main{
   border: 0.2rem solid var(--green);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
+}
+
+p{
+  font-family: var(--montserrat);
+  line-height: 1.5rem;
 }
