@@ -32,6 +32,7 @@ const toggleTheme = () => {
 button{
       background-color: transparent;
       border: none;
+      padding-right: 1rem;
 }
 
 </style>

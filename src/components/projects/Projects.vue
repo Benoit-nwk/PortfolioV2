@@ -4,9 +4,9 @@
 
 
 <template>
-      
+      <h1>Mes Réalisations</h1>
       <section id="section-project">
-            <h1>Mes Réalisations</h1>
+            
             <div class="project">
 
                         <h2>Portfolio</h2>
@@ -35,6 +35,11 @@
 
 
 <style scoped>
+h1{
+      text-align: center;
+      margin: 4rem 0;
+}
+
 #section-project{
       text-align: center;
       animation: in-from-right 1s;
@@ -51,5 +56,18 @@
       border-radius: 5px;
       background-color: var(--primary-color);
 
+}
+
+@media screen and (min-width: 1080px){
+      #section-project{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            animation: in-from-right 1s;
+            animation-timeline: view();
+      }
+      .project{
+            margin: 2rem 10rem;
+      }
+      
 }
 </style>

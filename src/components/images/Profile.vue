@@ -20,4 +20,13 @@
       }
 }
 
+@media screen and (min-width: 1080px){
+      .profile-picture{
+            > img{
+                  width: 20%;
+            }
+      }
+      
+}
+
 </style>

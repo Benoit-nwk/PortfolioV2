@@ -30,6 +30,7 @@ html,body{
   font-family: var(--montserrat);
   color: var(--light);
   transition: background-color 0.5s ease;
+  scroll-behavior: smooth;
 }
 
 .light{
@@ -63,4 +64,34 @@ h1{
 h2{
   font-family: var(--montserrat);
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1080px){
+  p{
+  font-family: var(--montserrat);
+  line-height: 2rem;
+  }
+
+  @keyframes in-from-right{
+    0%{transform: translateX(100%);}
+    40%{transform: translateX(0);}
+  }
+
+  @keyframes fade-in{
+    0%{ scale: 0; opacity:0; }
+    40%{ scale: 1; opacity: 1; }
+  }
+
+  @keyframes in-from-left{
+    0%{transform: translateX(-100%);}
+    40%{transform: translateX(0);}
+  }
+  
+
+  button.button_main{
+    width: 20%;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+  
 }

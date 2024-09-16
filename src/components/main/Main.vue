@@ -54,6 +54,7 @@ const skillsTab = ["VsCode", "PhpStorm", "HTML", "CSS", "JavaScript", "PHP", "Vu
 #section-skills{
       margin: 5rem 2rem;
       text-align: center;
+      opacity: 0;
       animation: fade-in linear;
       animation-timeline: view();
 }
@@ -89,5 +90,15 @@ main{
       border: 0.3rem solid var(--grey);
       padding: 1rem;
       border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 1080px){
+      .tab-of-skills{
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      #section-skills{
+            margin: 15rem 5rem;
+      }
 }
 </style>

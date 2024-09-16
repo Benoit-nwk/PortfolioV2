@@ -41,4 +41,18 @@ article{
             width: 60%;
       }
 }
+
+@media screen and (min-width: 1080px){
+      .about-picture{
+            > img{
+                  width: 20%;
+            }
+      }
+
+      article{
+      margin: 3rem 10rem;
+      text-align: center;
+}
+      
+}
 </style>
