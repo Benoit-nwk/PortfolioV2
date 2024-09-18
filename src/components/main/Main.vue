@@ -54,9 +54,6 @@ const skillsTab = ["VsCode", "PhpStorm", "HTML", "CSS", "JavaScript", "PHP", "Vu
 #section-skills{
       margin: 5rem 2rem;
       text-align: center;
-      opacity: 0;
-      animation: fade-in linear;
-      animation-timeline: view();
 }
 
 .align-button{

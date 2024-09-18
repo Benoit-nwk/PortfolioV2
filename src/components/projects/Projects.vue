@@ -41,9 +41,8 @@ h1{
 }
 
 #section-project{
+      margin: 8rem 0;
       text-align: center;
-      animation: in-from-right 1s;
-      animation-timeline: view();
 }
 .project{
       display: flex;
@@ -55,15 +54,14 @@ h1{
       border: 0.2rem solid var(--green);
       border-radius: 5px;
       background-color: var(--primary-color);
-
+      animation: fade-in 1s;
+      animation-timeline: view(); 
 }
 
 @media screen and (min-width: 1080px){
       #section-project{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            animation: in-from-right 1s;
-            animation-timeline: view();
       }
       .project{
             margin: 2rem 10rem;

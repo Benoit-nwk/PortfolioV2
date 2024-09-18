@@ -31,7 +31,7 @@ const sendMail = () => {
 #contact-section{
       margin: 8rem 0;
       text-align: center;
-      animation: fade-in linear;
+      animation: in-from-left linear;
       animation-timeline: view();
       display: flex;
       flex-direction: column;
