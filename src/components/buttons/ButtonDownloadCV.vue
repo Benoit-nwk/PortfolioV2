@@ -1,6 +1,6 @@
 <script setup>
 const downloadCV = () => {
-      window.open("../public/CV_Nowak_Benoit.pdf")
+      window.open("CV_Nowak_Benoit.pdf")
 }
 </script>
 
