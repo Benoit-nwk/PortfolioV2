@@ -1,6 +1,6 @@
 <script setup>
 const downloadCV = () => {
-      window.open("CV_Nowak_Benoit.pdf")
+      window.open("cv_Nowak_Benoit.pdf")
 }
 </script>
 
@@ -9,5 +9,4 @@ const downloadCV = () => {
 </template>
 
 <style scoped>
-
 </style>

@@ -42,6 +42,12 @@ button.button_main{
   border: 0.2rem solid var(--green);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
+  transition: all 0.5s ease;
+}
+
+button.button_main:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 p{

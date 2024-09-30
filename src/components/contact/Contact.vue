@@ -13,7 +13,7 @@ const sendMail = () => {
                   <h2>Par téléphone</h2>
                   <p>Au: <span>06.58.99.21.89</span></p>
                   <p>Ou en cliquant sur ce bouton:</p>
-                  <a href="tel:0658992189">Téléphoner</a>
+                  <a href="tel:0658992189">Appeler</a>
             </div>
             <div class="mail">
             <h2>Par mail</h2>
@@ -45,7 +45,6 @@ h1{
 }
 
 a{
-      
       width: 35%;
       height: 4rem;
       color: var(--light);
@@ -59,6 +58,11 @@ a{
       justify-content: center;
       align-items: center;
       margin: 2rem;
+      transition: all 0.5s ease;
+}
+
+a:hover{
+      transform: scale(1.1);
 }
 
 .phone, .mail{

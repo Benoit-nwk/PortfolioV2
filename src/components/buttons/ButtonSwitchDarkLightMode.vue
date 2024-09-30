@@ -32,7 +32,14 @@ const toggleTheme = () => {
 button{
       background-color: transparent;
       border: none;
-      padding-right: 1rem;
+      padding-right: 2rem;
+      transition: all 0.5s ease;
+}
+
+button:hover{
+  transform: scale(1.1);
+  rotate: 10deg;
+  cursor: pointer;
 }
 
 </style>
