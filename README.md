@@ -11,5 +11,5 @@ Portfolio réalisé avec le framework Vue.js
 - Lancez ensuite la commande `npm run dev`
 - Enjoy! 😄
 
-## Technologies et langages de programmation
+## Technologies et langages de programmation du projet
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs,vue,figma,vscode,vercel,ps,git,github&perline=50)](https://skillicons.dev)
